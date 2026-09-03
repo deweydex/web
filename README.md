@@ -3,6 +3,10 @@
 
 Welcome. By the end of this tutorial, you'll have a working personal website hosted on GitHub Pages—a real site with a real URL that you can share with anyone.
 
+## Where This Fits
+
+This tutorial is Step 1 of the Web Authoring and Databases course. The course front page is at [deweydex.github.io/dewstack](https://deweydex.github.io/dewstack/). It holds the plan for the whole course and every link you need. When an exercise here leaves you with a question, the [tutorials](https://deweydex.github.io/dewstack/tutorials/) there have the longer explanation. The [GitHub guides](https://deweydex.github.io/dewstack/tutorials/github-guides/01-getting-started.html) show each step of making an account, saving your work, and publishing a site.
+
 ---
 
 ## Before We Begin: A Note on Learning
