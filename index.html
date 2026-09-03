@@ -72,6 +72,13 @@ and screen readers that the content is in English.
     These communicate meaning to screen readers and search engines.
     -->
 
+    <a href="#main" class="skip-link">Skip to main content</a>
+    <!--
+    The skip link is invisible until someone presses Tab. It lets a keyboard
+    user jump straight to the content instead of tabbing through every
+    navigation link on every page. Look for .skip-link in styles.css.
+    -->
+
     <header>
         <!--
         The site header typically contains the logo/site name and main navigation.
@@ -92,10 +99,12 @@ and screen readers that the content is in English.
             Update the text to match your site name.
             -->
 
-            <nav class="main-nav">
+            <nav class="main-nav" aria-label="Main">
                 <!--
                 The <nav> element indicates this is navigation. Screen readers
-                recognize it and can announce "navigation" to users.
+                recognize it and can announce "navigation" to users. The
+                aria-label gives it a name, so a screen reader says "Main
+                navigation". That matters once a page has more than one <nav>.
                 
                 → Exercise 12: Update these links to point to your sections
                 -->
@@ -109,10 +118,11 @@ and screen readers that the content is in English.
         </div>
     </header>
 
-    <main>
+    <main id="main">
         <!--
         The <main> element contains the primary content of the page.
-        There should be only one <main> per page.
+        There should be only one <main> per page. The id="main" is where
+        the skip link at the top of the page jumps to.
         -->
 
         <section class="hero">
