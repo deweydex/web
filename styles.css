@@ -44,9 +44,15 @@ everywhere it's used.
     /* Colors */
     --primary-color: #2c3e50;
     --secondary-color: #34495e;
-    --accent-color: #3498db;
+    --accent-color: #2672ad;
     --text-dark: #2c3e50;
-    --text-light: #7f8c8d;
+    --text-light: #5f6f73;
+    /*
+    The accent and light-text colors are chosen so that text stays readable:
+    white on the accent color, and light text on the light background, both
+    pass the 4.5 to 1 contrast ratio that accessibility guidelines ask for.
+    If you change them, a contrast checker will tell you whether they still pass.
+    */
     --white: #ffffff;
     --light-gray: #f8f9fa;
 
@@ -165,6 +171,35 @@ a:focus {
     Focus styles are essential for keyboard navigation.
     → Exercise 23: Press Tab to move through links and see this outline
     */
+}
+
+/*
+The skip link is the first link on every page. It is hidden until a keyboard
+user presses Tab, then it appears at the top left. Following it jumps past
+the navigation to the main content. Screen readers still announce it while it
+is hidden, because clip hides it visually without removing it from the page.
+→ Exercise 23: Press Tab once on a freshly loaded page to see it
+*/
+.skip-link {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+}
+
+.skip-link:focus {
+    width: auto;
+    height: auto;
+    clip: auto;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    background-color: var(--white);
+    color: var(--primary-color);
+    outline: 2px solid var(--accent-color);
+    z-index: 1000;
 }
 
 

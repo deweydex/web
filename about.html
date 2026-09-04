@@ -42,6 +42,11 @@ For now, if you change the header in one file, remember to change it in the othe
 
 <body>
 
+    <a href="#main" class="skip-link">Skip to main content</a>
+    <!--
+    The same skip link as on index.html. See the comment there.
+    -->
+
     <header>
         <!--
         This header is identical to index.html. On a real site, you'd want
@@ -50,7 +55,7 @@ For now, if you change the header in one file, remember to change it in the othe
         <div class="container header-content">
             <a href="index.html" class="logo">My Portfolio</a>
 
-            <nav class="main-nav">
+            <nav class="main-nav" aria-label="Main">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html" class="active">About</a></li>
@@ -70,7 +75,7 @@ For now, if you change the header in one file, remember to change it in the othe
         </div>
     </header>
 
-    <main>
+    <main id="main">
 
         <section class="section page-header">
             <!--
