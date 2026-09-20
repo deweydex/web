@@ -3,6 +3,8 @@
 
 Welcome. By the end of this tutorial, you will have a personal website hosted on GitHub Pages. It will be a real site with a real address that you can share with anyone.
 
+This is the first starter in the web authoring and databases course. The course front page is at [deweydex.github.io/dewlab](https://deweydex.github.io/dewlab/), where the "Your first site" series walks through the ideas below one at a time.
+
 ---
 
 ## Before We Begin: A Note on Learning
